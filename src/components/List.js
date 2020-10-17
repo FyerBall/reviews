@@ -11,13 +11,21 @@ function List() {
           return (
             <div key={id} className='card'>
               <img src={img} alt={name} />
-              <h1 key={id}>name is {name}</h1>
+              <h3 className='name' key={id}>
+                {name}
+              </h3>
               <p>{review}</p>
             </div>
           );
         })}
       </div>
-      <button onClick={() => setData([])}>Clear All</button>
+      {data.length >= 1 ? (
+        <button className='btn' onClick={() => setData([])}>
+          Clear All
+        </button>
+      ) : (
+        <p className='noReviews'>No reviews yet</p>
+      )}
     </>
   );
 }
