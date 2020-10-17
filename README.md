@@ -1,3 +1,3 @@
 ## Created using useEffect and conditional rendering
 
-View it [here](https://github.com/facebook/create-react-app).
+View the live verson [here](https://heuristic-torvalds-1a9da3.netlify.app/).
